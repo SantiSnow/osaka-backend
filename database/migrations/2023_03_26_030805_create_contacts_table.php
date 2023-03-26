@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('country');
             $table->text('message');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
